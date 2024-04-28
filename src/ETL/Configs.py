@@ -1,0 +1,45 @@
+# Databricks notebook source
+#Source data paths
+ADDRESSES_SOURCE_PATH = f"{SOURCE_PATH_PREFIX}/addresses/"
+CUSTOMERS_SOURCE_PATH = f"{SOURCE_PATH_PREFIX}/customers/"
+ITEMS_SOURCE_PATH = f"{SOURCE_PATH_PREFIX}/items/"
+ORDERS_SOURCE_PATH = f"{SOURCE_PATH_PREFIX}/orders/"
+ORDER_DETAILS_SOURCE_PATH = f"{SOURCE_PATH_PREFIX}/orderDetails/"
+
+
+# COMMAND ----------
+
+#BRONZE tables paths
+ADDRESSES_BRONZE_PATH = f"{DESTINATION_PATH_PREFIX}/bronze/addresses"
+CUSTOMERS_BRONZE_PATH = f"{DESTINATION_PATH_PREFIX}/bronze/customers"
+ITEMS_BRONZE_PATH = f"{DESTINATION_PATH_PREFIX}/bronze/items"
+ORDERS_BRONZE_PATH = f"{DESTINATION_PATH_PREFIX}/bronze/orders"
+ORDER_DETAILS_BRONZE_PATH = f"{DESTINATION_PATH_PREFIX}/bronze/order_details"
+
+
+# COMMAND ----------
+
+#SILVER tables paths
+ADDRESSES_SILVER_PATH = f"{DESTINATION_PATH_PREFIX}/silver/addresses"
+CUSTOMERS_SILVER_PATH = f"{DESTINATION_PATH_PREFIX}/silver/customers"
+ITEMS_SILVER_PATH = f"{DESTINATION_PATH_PREFIX}/silver/items"
+ORDERS_SILVER_PATH = f"{DESTINATION_PATH_PREFIX}/silver/orders"
+ORDER_DETAILS_SILVER_PATH = f"{DESTINATION_PATH_PREFIX}/silver/order_details"
+
+# COMMAND ----------
+
+#Dead Letter Queue paths
+ADDRESSES_DLQ_PATH = f"{DESTINATION_PATH_PREFIX}/dlq/addresses"
+CUSTOMERS_DLQ_PATH = f"{DESTINATION_PATH_PREFIX}/dlq/customers"
+ITEMS_DLQ_PATH = f"{DESTINATION_PATH_PREFIX}/dlq/items"
+ORDERS_DLQ_PATH = f"{PATH_PREFIX}/dlq/orders"
+ORDER_DETAILS_DLQ_PATH = f"{PATH_PREFIX}/dlq/order_details"
+
+# COMMAND ----------
+
+#Gold tables paths
+GOLD_CUSTOMER_STATUS_BY_CITY_PATH = f"{PATH_PREFIX}/gold/customer_status_by_city"
+GOLD_CUSTOMER_BREAKDOWN_PATH = f"{PATH_PREFIX}/gold/customer_breakdown"
+GOLD_ORDERS_BY_CUSTOMER_WEEK_PATH = f"{PATH_PREFIX}/gold/orders_by_customer_week"
+GOLD_ORDERS_BY_CITY_YEAR_MONTH_PATH = f"{PATH_PREFIX}/gold/orders_by_city_year_month"
+GOLD_ORDERS_TYPE_DELIVERY_TIME_PATH = f"{PATH_PREFIX}/gold/orders_type_delivery_time"
